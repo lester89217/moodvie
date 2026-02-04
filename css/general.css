@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-dark: #121212;
+  --bg-card: #1e1e1e;
+  --text-primary: #f3f7ff;
+  --text-secondary: #d1d5dc;
+  --text-muted: #6a7282;
+  --accent-blue: #82b1ff;
+  --border-color: #2c2c2e;
+  --font-primary: "Noto Sans TC", "DM Sans", sans-serif;
+}
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
