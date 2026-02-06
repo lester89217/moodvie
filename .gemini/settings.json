@@ -1,8 +1,16 @@
 {
-  "mcpServers": {
-    "figma": {
-      "url": "https://mcp.figma.com/mcp",
-      "type": "http"
-    }
-  }
+	"mcpServers": {
+		"figma": {
+			"url": "https://mcp.figma.com/mcp",
+			"type": "http"
+		},
+		"filesystem": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-filesystem",
+				"C:/Users/User/Desktop/moodvie"
+			]
+		}
+	}
 }
