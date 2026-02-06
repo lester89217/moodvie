@@ -1,0 +1,45 @@
+/* slick-arrow樣式 */
+.slick-dots li button:before {
+	font-size: 20px;
+	color: white;
+}
+.slick-slide {
+	margin: 0 20px;
+}
+/* 定義左右按鈕的共同樣式 */
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	width: 4rem;
+	height: 4.5rem;
+	background: rgba(0, 0, 0, 0.106);
+	border: 2px solid #8f8f8f;
+	cursor: pointer;
+	font-size: 0; /* 隱藏原本的 "Previous" 文字 */
+	transition: all 0.3s ease;
+}
+
+.slick-prev::before {
+	content: "←";
+	font-size: 20px;
+	color: #e7e7e7;
+}
+.slick-next::before {
+	content: "→";
+	font-size: 20px;
+	color: #e7e7e7;
+}
+
+.slick-prev {
+	left: -50px;
+}
+.slick-next {
+	right: -50px;
+}
+
+.slick-next:hover::before,
+.slick-prev:hover::before {
+	color: var(--accent-blue);
+}

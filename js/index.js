@@ -1,27 +1,15 @@
-// MovieVerse Interaction Script
+$(document).ready(function () {
+	$(".movie-card-area-slick").slick({
+		slidesToShow: 4,
+		dots: false,
+		centerMode: true,
+	});
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('MovieVerse application loaded.');
-
-    // Example: Add simple hover effects or interaction logging
-    const buttons = document.querySelectorAll('button');
-    buttons.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            console.log('Button clicked:', e.target.innerText || 'Icon Button');
-        });
-    });
-
-    // Search input focus effect (optional visual enhancement)
-    const searchInput = document.querySelector('.search-bar input');
-    const searchBar = document.querySelector('.search-bar');
-    
-    if(searchInput && searchBar) {
-        searchInput.addEventListener('focus', () => {
-            searchBar.style.borderColor = '#82b1ff';
-        });
-
-        searchInput.addEventListener('blur', () => {
-            searchBar.style.borderColor = '#2c2c2e';
-        });
-    }
+	$(".horizontal-scroll-area-slick").slick({
+		slidesToShow: 3,
+		dots: false,
+		centerMode: false,
+	});
 });
+
+// Slick version 1.5.8

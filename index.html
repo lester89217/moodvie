@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>MovieVerse | 您的專業電影資訊網</title>
+		<title>Moodvie | 情緒選片領航員</title>
 
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +19,16 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"
+		/>
 		<link rel="stylesheet" href="css/general.css" />
+		<link rel="stylesheet" href="css/slick-index.css" />
 		<link rel="stylesheet" href="css/index.css" />
 	</head>
 	<body>
@@ -99,10 +108,10 @@
 					<h3>必看清單</h3>
 					<div class="section-subtitle-group">
 						<p>篩選自 IMDb 7.0 以上好片</p>
-						<a href="#" class="view-more">View More</a>
+						<a href="#" class="view-more">查看更多</a>
 					</div>
 				</div>
-				<div class="movie-card-area">
+				<div class="movie-card-area-slick">
 					<div class="movie-card">
 						<div class="card-image-container">
 							<img
@@ -139,7 +148,7 @@
 								<span>Sci-Fi</span>
 							</div>
 							<div class="stream-on">
-								<span class="stream-label">Stream on:</span>
+								<span class="stream-label">開始觀看:</span>
 								<div class="stream-icons">
 									<img
 										src="https://www.figma.com/api/mcp/asset/62483cc1-87ae-43d9-8d78-b5aa52547fe9"
@@ -148,7 +157,7 @@
 									/>
 									<img
 										src="https://www.figma.com/api/mcp/asset/5ce35a76-42c2-47b8-81bd-40aae9644cac"
-										class="stream-icon"
+										class="stream-icon disney-icon"
 										alt="Platform"
 									/>
 								</div>
@@ -191,7 +200,7 @@
 								<span>Sci-Fi</span>
 							</div>
 							<div class="stream-on">
-								<span class="stream-label">Stream on:</span>
+								<span class="stream-label">開始觀看:</span>
 								<div class="stream-icons">
 									<img
 										src="https://www.figma.com/api/mcp/asset/62483cc1-87ae-43d9-8d78-b5aa52547fe9"
@@ -200,7 +209,7 @@
 									/>
 									<img
 										src="https://www.figma.com/api/mcp/asset/5ce35a76-42c2-47b8-81bd-40aae9644cac"
-										class="stream-icon"
+										class="stream-icon disney-icon"
 										alt="Platform"
 									/>
 								</div>
@@ -243,7 +252,7 @@
 								<span>Sci-Fi</span>
 							</div>
 							<div class="stream-on">
-								<span class="stream-label">Stream on:</span>
+								<span class="stream-label">開始觀看:</span>
 								<div class="stream-icons">
 									<img
 										src="https://www.figma.com/api/mcp/asset/62483cc1-87ae-43d9-8d78-b5aa52547fe9"
@@ -252,7 +261,7 @@
 									/>
 									<img
 										src="https://www.figma.com/api/mcp/asset/5ce35a76-42c2-47b8-81bd-40aae9644cac"
-										class="stream-icon"
+										class="stream-icon disney-icon"
 										alt="Platform"
 									/>
 								</div>
@@ -295,7 +304,7 @@
 								<span>Sci-Fi</span>
 							</div>
 							<div class="stream-on">
-								<span class="stream-label">Stream on:</span>
+								<span class="stream-label">開始觀看:</span>
 								<div class="stream-icons">
 									<img
 										src="https://www.figma.com/api/mcp/asset/62483cc1-87ae-43d9-8d78-b5aa52547fe9"
@@ -304,7 +313,7 @@
 									/>
 									<img
 										src="https://www.figma.com/api/mcp/asset/5ce35a76-42c2-47b8-81bd-40aae9644cac"
-										class="stream-icon"
+										class="stream-icon disney-icon"
 										alt="Platform"
 									/>
 								</div>
@@ -347,7 +356,7 @@
 								<span>Sci-Fi</span>
 							</div>
 							<div class="stream-on">
-								<span class="stream-label">Stream on:</span>
+								<span class="stream-label">開始觀看:</span>
 								<div class="stream-icons">
 									<img
 										src="https://www.figma.com/api/mcp/asset/62483cc1-87ae-43d9-8d78-b5aa52547fe9"
@@ -356,7 +365,7 @@
 									/>
 									<img
 										src="https://www.figma.com/api/mcp/asset/5ce35a76-42c2-47b8-81bd-40aae9644cac"
-										class="stream-icon"
+										class="stream-icon disney-icon"
 										alt="Platform"
 									/>
 								</div>
@@ -376,10 +385,10 @@
 					</div>
 					<div class="section-subtitle-group">
 						<p>依據你的心情標籤量身打造</p>
-						<a href="#" class="view-more">View More</a>
+						<a href="#" class="view-more">查看更多</a>
 					</div>
 				</div>
-				<div class="movie-card-area">
+				<div class="movie-card-area-slick">
 					<div class="movie-card">
 						<div class="card-image-container">
 							<img
@@ -416,7 +425,7 @@
 								<span>Sci-Fi</span>
 							</div>
 							<div class="stream-on">
-								<span class="stream-label">Stream on:</span>
+								<span class="stream-label">開始觀看:</span>
 								<div class="stream-icons">
 									<img
 										src="https://www.figma.com/api/mcp/asset/62483cc1-87ae-43d9-8d78-b5aa52547fe9"
@@ -425,7 +434,7 @@
 									/>
 									<img
 										src="https://www.figma.com/api/mcp/asset/5ce35a76-42c2-47b8-81bd-40aae9644cac"
-										class="stream-icon"
+										class="stream-icon disney-icon"
 										alt="Platform"
 									/>
 								</div>
@@ -468,7 +477,7 @@
 								<span>Sci-Fi</span>
 							</div>
 							<div class="stream-on">
-								<span class="stream-label">Stream on:</span>
+								<span class="stream-label">開始觀看:</span>
 								<div class="stream-icons">
 									<img
 										src="https://www.figma.com/api/mcp/asset/62483cc1-87ae-43d9-8d78-b5aa52547fe9"
@@ -477,7 +486,7 @@
 									/>
 									<img
 										src="https://www.figma.com/api/mcp/asset/5ce35a76-42c2-47b8-81bd-40aae9644cac"
-										class="stream-icon"
+										class="stream-icon disney-icon"
 										alt="Platform"
 									/>
 								</div>
@@ -520,7 +529,7 @@
 								<span>Sci-Fi</span>
 							</div>
 							<div class="stream-on">
-								<span class="stream-label">Stream on:</span>
+								<span class="stream-label">開始觀看:</span>
 								<div class="stream-icons">
 									<img
 										src="https://www.figma.com/api/mcp/asset/62483cc1-87ae-43d9-8d78-b5aa52547fe9"
@@ -529,7 +538,7 @@
 									/>
 									<img
 										src="https://www.figma.com/api/mcp/asset/5ce35a76-42c2-47b8-81bd-40aae9644cac"
-										class="stream-icon"
+										class="stream-icon disney-icon"
 										alt="Platform"
 									/>
 								</div>
@@ -572,7 +581,7 @@
 								<span>Sci-Fi</span>
 							</div>
 							<div class="stream-on">
-								<span class="stream-label">Stream on:</span>
+								<span class="stream-label">開始觀看:</span>
 								<div class="stream-icons">
 									<img
 										src="https://www.figma.com/api/mcp/asset/62483cc1-87ae-43d9-8d78-b5aa52547fe9"
@@ -581,7 +590,7 @@
 									/>
 									<img
 										src="https://www.figma.com/api/mcp/asset/5ce35a76-42c2-47b8-81bd-40aae9644cac"
-										class="stream-icon"
+										class="stream-icon disney-icon"
 										alt="Platform"
 									/>
 								</div>
@@ -624,7 +633,7 @@
 								<span>Sci-Fi</span>
 							</div>
 							<div class="stream-on">
-								<span class="stream-label">Stream on:</span>
+								<span class="stream-label">開始觀看:</span>
 								<div class="stream-icons">
 									<img
 										src="https://www.figma.com/api/mcp/asset/62483cc1-87ae-43d9-8d78-b5aa52547fe9"
@@ -633,7 +642,7 @@
 									/>
 									<img
 										src="https://www.figma.com/api/mcp/asset/5ce35a76-42c2-47b8-81bd-40aae9644cac"
-										class="stream-icon"
+										class="stream-icon disney-icon"
 										alt="Platform"
 									/>
 								</div>
@@ -644,16 +653,16 @@
 			</div>
 		</section>
 
-		<!-- Section 3: Popular Interests & Upcoming -->
+		<!-- Section 3: 熱門興趣 -->
 		<section class="section section-interests">
 			<div class="container">
 				<div class="section-header-simple">
 					<div class="section-title-group">
 						<h2>熱門興趣</h2>
 					</div>
-					<a href="#" class="view-more">View More</a>
+					<a href="#" class="view-more">查看更多</a>
 				</div>
-				<div class="horizontal-scroll-area">
+				<div class="horizontal-scroll-area-slick">
 					<div class="interest-card">
 						<img
 							src="https://www.figma.com/api/mcp/asset/17111e6e-4494-4289-80b4-c6e8abf56c0b"
@@ -708,7 +717,7 @@
 					<div class="section-title-group">
 						<h2>即將上映</h2>
 					</div>
-					<a href="#" class="view-more">View More</a>
+					<a href="#" class="view-more">查看更多</a>
 				</div>
 				<div class="horizontal-scroll-area">
 					<div class="interest-card">
@@ -1058,7 +1067,19 @@
 				</div>
 			</div>
 		</footer>
-
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<!-- slick -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+			integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 		<script src="js/index.js"></script>
 	</body>
 </html>
