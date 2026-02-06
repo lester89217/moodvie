@@ -388,6 +388,26 @@
 	cursor: pointer;
 }
 
+.interest-card-comming {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: end;
+	cursor: pointer;
+	background-image: url(/img/關鍵公敵.png);
+	width: 26.125rem;
+	height: 15.875rem;
+	padding: 2rem;
+}
+.date {
+	color: var(--accent-blue);
+	font-size: 22px;
+}
+.comming-movie-name {
+	color: var(--primary300);
+	font-size: 36px;
+}
+
 .interest-card img.bg-img {
 	position: absolute;
 	inset: 0;

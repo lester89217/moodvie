@@ -2,7 +2,7 @@ $(document).ready(function () {
 	$(".movie-card-area-slick").slick({
 		slidesToShow: 4,
 		dots: false,
-		centerMode: true,
+		centerMode: false,
 	});
 
 	$(".horizontal-scroll-area-slick").slick({

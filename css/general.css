@@ -12,6 +12,7 @@
 	--accent-blue: #82b1ff;
 	--border-color: #2c2c2e;
 	--font-primary: "Noto Sans TC", "DM Sans", sans-serif;
+	--primary300: #d8e7ff;
 }
 body {
 	background-color: var(--bg-dark);
