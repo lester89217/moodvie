@@ -42,20 +42,21 @@
 .nav-link {
   color: var(--text-primary);
   font-size: 16px;
-  line-height: 1.5rem; /* 24px */
+  line-height: 1.5rem;
+  cursor: pointer;
 }
 
 .nav-link:hover {
   color: var(--primary500);
 }
 
-.nav-link-more {
+/* .nav-link-more {
   display: flex;
   align-items: center;
-  gap: 0.1875rem; /* 3px */
+  gap: 0.1875rem;
   color: var(--text-primary);
   font-size: 16px;
-}
+} */
 
 .header-right {
   display: flex;
@@ -262,6 +263,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-image-container:hover img {
+  transform: scale(1.2);
 }
 
 .card-badge {
@@ -870,4 +876,21 @@
   width: 1.25rem; /* 20px */
   height: 1.25rem;
   object-fit: contain;
+}
+
+/* bootstrap修改 */
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  background-color: #272727;
+}
+.dropdown-item {
+  color: white;
+  padding: 0.5rem 1rem;
+}
+.dropdown-item:hover {
+  color: var(--primary700);
+  background-color: var(--primary300);
 }

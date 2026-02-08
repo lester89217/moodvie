@@ -14,6 +14,7 @@
   --font-primary: "Noto Sans TC", "DM Sans", sans-serif;
   --primary300: #d8e7ff;
   --primary500: #759fe6;
+  --primary700: #6285bf;
 }
 body {
   background-color: var(--bg-dark);
