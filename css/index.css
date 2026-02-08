@@ -856,6 +856,11 @@
   color: var(--text-muted);
   font-size: 12px;
 }
+
+.copyright p {
+  margin-bottom: 0;
+}
+
 .find-movie {
   display: flex;
   align-items: center;
