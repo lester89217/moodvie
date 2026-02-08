@@ -1,76 +1,77 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 :root {
-	--bg-dark: #121212;
-	--bg-card: #1e1e1e;
-	--text-primary: #f3f7ff;
-	--text-secondary: #d1d5dc;
-	--text-muted: #6a7282;
-	--accent-blue: #82b1ff;
-	--border-color: #2c2c2e;
-	--font-primary: "Noto Sans TC", "DM Sans", sans-serif;
-	--primary300: #d8e7ff;
+  --bg-dark: #121212;
+  --bg-card: #1e1e1e;
+  --text-primary: #f3f7ff;
+  --text-secondary: #d1d5dc;
+  --text-muted: #6a7282;
+  --accent-blue: #82b1ff;
+  --border-color: #2c2c2e;
+  --font-primary: "Noto Sans TC", "DM Sans", sans-serif;
+  --primary300: #d8e7ff;
+  --primary500: #759fe6;
 }
 body {
-	background-color: var(--bg-dark);
-	color: var(--text-primary);
-	font-family: var(--font-primary);
-	line-height: 1.5;
-	overflow-x: hidden;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  line-height: 1.5;
+  overflow-x: hidden;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 button {
-	border: none;
-	background: none;
-	cursor: pointer;
-	font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 /* scrollbar樣式 */
 .horizontal-scroll-area,
 .movie-card-area {
-	display: flex;
-	gap: 1.25rem;
-	overflow-x: auto;
-	overflow-y: hidden;
-	width: 100%;
-	padding-bottom: 1.25rem;
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  padding-bottom: 1.25rem;
 
-	/* Firefox 支援 */
-	scrollbar-color: #555 #222;
-	scrollbar-width: thin;
+  /* Firefox 支援 */
+  scrollbar-color: #555 #222;
+  scrollbar-width: thin;
 }
 
 /* 捲軸本體樣式 (Chrome, Safari, Edge) */
 .horizontal-scroll-area::-webkit-scrollbar,
 .movie-card-area::-webkit-scrollbar {
-	height: 8px;
+  height: 8px;
 }
 
 /* 軌道樣式 */
 .horizontal-scroll-area::-webkit-scrollbar-track,
 .movie-card-area::-webkit-scrollbar-track {
-	background: #222;
-	border-radius: 4px;
+  background: #222;
+  border-radius: 4px;
 }
 
 /* 拉桿樣式 */
 .horizontal-scroll-area::-webkit-scrollbar-thumb,
 .movie-card-area::-webkit-scrollbar-thumb {
-	background: #555;
-	border-radius: 4px;
+  background: #555;
+  border-radius: 4px;
 }
 
 /* 滑鼠懸停效果 */
 .horizontal-scroll-area::-webkit-scrollbar-thumb:hover,
 .movie-card-area::-webkit-scrollbar-thumb:hover {
-	background: #777;
+  background: #777;
 }

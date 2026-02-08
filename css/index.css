@@ -45,6 +45,10 @@
   line-height: 1.5rem; /* 24px */
 }
 
+.nav-link:hover {
+  color: var(--primary-500);
+}
+
 .nav-link-more {
   display: flex;
   align-items: center;
