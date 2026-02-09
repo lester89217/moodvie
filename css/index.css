@@ -20,6 +20,7 @@
 	padding: 0 2rem;
 	max-width: 90rem;
 	margin: 0 auto;
+	gap: 2rem;
 }
 
 .header-left {
@@ -959,10 +960,19 @@
 		left: 0;
 		right: 0;
 		background-color: var(--bg-dark);
-		z-index: 1000;
+		z-index: 9999;
 		border-bottom: 1px solid var(--border-color);
+
+		/* 佈局隔離與 GPU 加速 */
+		contain: layout;
+		will-change: height;
+		transform: translateZ(0);
+		overflow: hidden !important;
+	}
+
+	.navbar-collapse.show {
 		max-height: 80vh;
-		overflow-y: auto;
+		overflow-y: auto !important;
 	}
 
 	.nav-menu {
