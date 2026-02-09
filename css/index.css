@@ -451,7 +451,7 @@
   justify-content: end;
   align-items: end;
   cursor: pointer;
-  background-image: url(/img/關鍵公敵.png);
+  background-image: url(../img/關鍵公敵.png);
   width: 26.125rem;
   height: 15.875rem;
   padding: 1rem;
@@ -463,19 +463,19 @@
 }
 
 .interest-card-comming.family {
-  background-image: url(/img/日租家庭.png);
+  background-image: url(../img/日租家庭.png);
 }
 
 .interest-card-comming.villa {
-  background-image: url(/img/咆嘯山莊.png);
+  background-image: url(../img/咆嘯山莊.png);
 }
 
 .interest-card-comming.accident {
-  background-image: url(/img/只是一場意外.png);
+  background-image: url(../img/只是一場意外.png);
 }
 
 .interest-card-comming.door {
-  background-image: url(/img/穿越地獄之門.png);
+  background-image: url(../img/穿越地獄之門.png);
 }
 
 .date {
