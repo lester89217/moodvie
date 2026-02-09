@@ -1136,7 +1136,7 @@
 	}
 
 	.hero-description {
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 1.6;
 		max-width: 100%;
 	}
@@ -1316,8 +1316,13 @@
 }
 
 @media (max-width: 480px) {
-	.hero-title {
+	/* .hero-title {
 		font-size: 28px;
+	} */
+
+	.hero-title {
+		font-size: 6vw; /* 根據螢幕寬度自動調整字體 */
+		width: 13em;
 	}
 
 	.section-subtitle-group {
