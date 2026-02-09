@@ -36,6 +36,12 @@ button {
   font-family: inherit;
 }
 
+/* Mobile Toggles */
+.mobile-nav-toggle,
+.mobile-search-toggle {
+  display: none;
+}
+
 /* scrollbar樣式 */
 .horizontal-scroll-area,
 .movie-card-area {
