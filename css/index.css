@@ -142,6 +142,31 @@
 	font-weight: 700;
 	line-height: 5rem;
 	color: var(--text-primary);
+	/* 核心修正 */
+	width: 15em; /* 13 個中文字 = 13em */
+	white-space: nowrap;
+	display: inline-block;
+	overflow: hidden;
+	border-right: 0.1em solid;
+
+	/* 動畫修正 */
+	animation:
+		typing 2.8s steps(13) forwards,
+		caret 1s steps(1) infinite;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 13em;
+	} /* 對應上面的 13em */
+}
+@keyframes caret {
+	50% {
+		border-color: transparent;
+	}
 }
 
 .hero-description {
@@ -372,7 +397,7 @@
 
 .save-btn img {
 	width: 1rem;
-	height: 1rem;
+	height: 1.2rem;
 }
 
 .meta-divider {

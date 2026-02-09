@@ -17,6 +17,11 @@
 	--primary500: #759fe6;
 	--primary700: #6285bf;
 	--primary800: #4e6a99;
+	--secondary400: #d65926;
+	--secondary800: #803517;
+	--secondary100: #fbeee9;
+	--secondary200: #f9e6de;
+	--secondary300: #f2ccbc;
 }
 body {
 	background-color: var(--bg-dark);
