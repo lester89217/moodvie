@@ -1,255 +1,252 @@
 <!doctype html>
 <html lang="zh-TW">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Moodvie | 登入</title>
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Mina&family=Noto+Sans+TC:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-		/>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="css/general.css" />
-		<link rel="stylesheet" href="css/index.css" />
-		<link rel="stylesheet" href="css/login.css" />
-	</head>
-	<body>
-		<!-- Header -->
-		<header class="header navbar navbar-expand-lg p-0">
-			<div class="header-container container-fluid">
-				<div class="header-left d-flex align-items-center">
-					<button
-						class="navbar-toggler mobile-nav-toggle border-0 p-0"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNav"
-						aria-controls="navbarNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<img src="img/hambuger_iocn.png" alt="Menu" />
-					</button>
-					<a href="index.html" class="logo">
-						<img
-							src="https://www.figma.com/api/mcp/asset/fcf0c99e-11ac-4364-b10e-c2ae770fa0c9"
-							alt="Moodvie Logo"
-						/>
-					</a>
-				</div>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<nav class="nav-menu" id="accordionMenu">
-						<!-- 電影 -->
-						<div class="nav-item-dropdown">
-							<a
-								class="nav-link"
-								data-bs-toggle="collapse"
-								href="#collapseMovies"
-								role="button"
-								aria-expanded="false"
-							>
-								電影
-							</a>
-							<div
-								class="collapse d-lg-block"
-								id="collapseMovies"
-								data-bs-parent="#accordionMenu"
-							>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#">電影發布排程</a></li>
-									<li><a class="dropdown-item" href="#">排名前250名電影</a></li>
-									<li><a class="dropdown-item" href="#">最受歡迎的電影</a></li>
-									<li>
-										<a class="dropdown-item" href="#">按類型瀏覽的電影</a>
-									</li>
-									<li><a class="dropdown-item" href="#">票房榜首</a></li>
-									<li><a class="dropdown-item" href="#">最受歡迎的電影</a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- 影集 -->
-						<div class="nav-item-dropdown">
-							<a
-								class="nav-link"
-								data-bs-toggle="collapse"
-								href="#collapseSeries"
-								role="button"
-								aria-expanded="false"
-							>
-								影集
-							</a>
-							<div
-								class="collapse d-lg-block"
-								id="collapseSeries"
-								data-bs-parent="#accordionMenu"
-							>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#">電影發布排程</a></li>
-									<li><a class="dropdown-item" href="#">排名前250名電影</a></li>
-									<li><a class="dropdown-item" href="#">最受歡迎的電影</a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- 影展獎項與活動 -->
-						<div class="nav-item-dropdown">
-							<a
-								class="nav-link"
-								data-bs-toggle="collapse"
-								href="#collapseEvents"
-								role="button"
-								aria-expanded="false"
-							>
-								影展獎項與活動
-							</a>
-							<div
-								class="collapse d-lg-block"
-								id="collapseEvents"
-								data-bs-parent="#accordionMenu"
-							>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#">奧斯卡</a></li>
-									<li><a class="dropdown-item" href="#">金球獎</a></li>
-									<li><a class="dropdown-item" href="#">獎項情報</a></li>
-									<li><a class="dropdown-item" href="#">所有影展與活動</a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- 社群 -->
-						<div class="nav-item-dropdown">
-							<a
-								class="nav-link"
-								data-bs-toggle="collapse"
-								href="#collapseCommunity"
-								role="button"
-								aria-expanded="false"
-							>
-								社群
-							</a>
-							<div
-								class="collapse d-lg-block"
-								id="collapseCommunity"
-								data-bs-parent="#accordionMenu"
-							>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#">幫助中心</a></li>
-									<li><a class="dropdown-item" href="#">貢獻者專區</a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- 更多 -->
-						<div class="nav-item-dropdown">
-							<a
-								class="nav-link"
-								data-bs-toggle="collapse"
-								href="#collapseMore"
-								role="button"
-								aria-expanded="false"
-							>
-								更多<i class="fa-solid fa-caret-down"></i>
-							</a>
-							<div
-								class="collapse d-lg-block"
-								id="collapseMore"
-								data-bs-parent="#accordionMenu"
-							>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#">名人介紹</a></li>
-									<li><a class="dropdown-item" href="#">最受歡迎的名人</a></li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-				</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moodvie | 登入</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Mina&family=Noto+Sans+TC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header navbar navbar-expand-lg p-0">
+      <div class="header-container container-fluid">
+        <div class="header-left d-flex align-items-center">
+          <button
+            class="navbar-toggler mobile-nav-toggle border-0 p-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="img/hambuger_iocn.png" alt="Menu" />
+          </button>
+          <a href="index.html" class="logo">
+            <img src="img/moodive_logo.png" alt="Moodvie Logo" />
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <nav class="nav-menu" id="accordionMenu">
+            <!-- 電影 -->
+            <div class="nav-item-dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#collapseMovies"
+                role="button"
+                aria-expanded="false"
+              >
+                電影
+              </a>
+              <div
+                class="collapse d-lg-block"
+                id="collapseMovies"
+                data-bs-parent="#accordionMenu"
+              >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">電影發布排程</a></li>
+                  <li><a class="dropdown-item" href="#">排名前250名電影</a></li>
+                  <li><a class="dropdown-item" href="#">最受歡迎的電影</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">按類型瀏覽的電影</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">票房榜首</a></li>
+                  <li><a class="dropdown-item" href="#">最受歡迎的電影</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- 影集 -->
+            <div class="nav-item-dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#collapseSeries"
+                role="button"
+                aria-expanded="false"
+              >
+                影集
+              </a>
+              <div
+                class="collapse d-lg-block"
+                id="collapseSeries"
+                data-bs-parent="#accordionMenu"
+              >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">電影發布排程</a></li>
+                  <li><a class="dropdown-item" href="#">排名前250名電影</a></li>
+                  <li><a class="dropdown-item" href="#">最受歡迎的電影</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- 影展獎項與活動 -->
+            <div class="nav-item-dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#collapseEvents"
+                role="button"
+                aria-expanded="false"
+              >
+                影展獎項與活動
+              </a>
+              <div
+                class="collapse d-lg-block"
+                id="collapseEvents"
+                data-bs-parent="#accordionMenu"
+              >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">奧斯卡</a></li>
+                  <li><a class="dropdown-item" href="#">金球獎</a></li>
+                  <li><a class="dropdown-item" href="#">獎項情報</a></li>
+                  <li><a class="dropdown-item" href="#">所有影展與活動</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- 社群 -->
+            <div class="nav-item-dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#collapseCommunity"
+                role="button"
+                aria-expanded="false"
+              >
+                社群
+              </a>
+              <div
+                class="collapse d-lg-block"
+                id="collapseCommunity"
+                data-bs-parent="#accordionMenu"
+              >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">幫助中心</a></li>
+                  <li><a class="dropdown-item" href="#">貢獻者專區</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- 更多 -->
+            <div class="nav-item-dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#collapseMore"
+                role="button"
+                aria-expanded="false"
+              >
+                更多<i class="fa-solid fa-caret-down"></i>
+              </a>
+              <div
+                class="collapse d-lg-block"
+                id="collapseMore"
+                data-bs-parent="#accordionMenu"
+              >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">名人介紹</a></li>
+                  <li><a class="dropdown-item" href="#">最受歡迎的名人</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
 
-				<div class="header-right">
-					<div class="search-bar">
-						<input type="text" placeholder="搜尋電影、演員、導演…" />
-					</div>
-					<div class="mobile-search-toggle">
-						<i class="fa-solid fa-magnifying-glass"></i>
-					</div>
-					<button class="btn-login">登入</button>
-				</div>
-			</div>
-		</header>
+        <div class="header-right">
+          <div class="search-bar">
+            <input type="text" placeholder="搜尋電影、演員、導演…" />
+          </div>
+          <div class="mobile-search-toggle">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <button class="btn-login">登入</button>
+        </div>
+      </div>
+    </header>
 
-		<!-- Login Content -->
-		<main class="login-page">
-			<div class="login-container container">
-				<div class="login-wrapper">
-					<!-- Left Tagline -->
-					<div class="login-tagline">
-						<div class="logo-placeholder">LOGO</div>
-						<p class="tagline-text">
-							準備好要放鬆了嗎？登入即刻領取你的專屬情緒片單。
-						</p>
-					</div>
+    <!-- Login Content -->
+    <main class="login-page">
+      <div class="login-container container">
+        <div class="login-wrapper">
+          <!-- Left Tagline -->
+          <div class="login-tagline">
+            <div class="logo-placeholder">LOGO</div>
+            <p class="tagline-text">
+              準備好要放鬆了嗎？登入即刻領取你的專屬情緒片單。
+            </p>
+          </div>
 
-					<!-- Right Login Card -->
-					<div class="login-card">
-						<div class="login-card-header">
-							<h2>登入</h2>
-							<p>
-								歡迎回來。今天過得好嗎？不必在海量清單中糾結，只需聽從內心的聲音；讓我們根據您此刻的心情，自動匹配最契合的專屬片單。
-							</p>
-						</div>
+          <!-- Right Login Card -->
+          <div class="login-card">
+            <div class="login-card-header">
+              <h2>登入</h2>
+              <p>
+                歡迎回來。今天過得好嗎？不必在海量清單中糾結，只需聽從內心的聲音；讓我們根據您此刻的心情，自動匹配最契合的專屬片單。
+              </p>
+            </div>
 
-						<div class="login-social">
-							<button class="btn-google">
-								<i class="fa-brands fa-google"></i>
-								<span>Google 登入</span>
-							</button>
-						</div>
+            <div class="login-social">
+              <button class="btn-google">
+                <i class="fa-brands fa-google"></i>
+                <span>Google 登入</span>
+              </button>
+            </div>
 
-						<div class="login-divider">
-							<span>or</span>
-						</div>
+            <div class="login-divider">
+              <span>or</span>
+            </div>
 
-						<form class="login-form">
-							<div class="form-group">
-								<input type="email" placeholder="請輸入電子郵件帳號" required />
-							</div>
-							<div class="form-group">
-								<input
-									type="password"
-									placeholder="請輸入密碼"
-									required
-									id="password"
-								/>
-								<button type="button" id="toggleBtn" class="toggle-btn">
-									<!-- 眼睛打開 -->
-									<span class="eye-icon-open hidden"
-										><i class="fa-regular fa-eye"></i
-									></span>
-									<!-- 眼睛關閉 -->
-									<span class="eye-icon-close"
-										><i class="fa-regular fa-eye-slash"></i
-									></span>
-								</button>
-							</div>
-							<button type="submit" class="btn-submit">登入</button>
-						</form>
+            <form class="login-form">
+              <div class="form-group">
+                <input type="email" placeholder="請輸入電子郵件帳號" required />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  placeholder="請輸入密碼"
+                  required
+                  id="password"
+                />
+                <button type="button" id="toggleBtn" class="toggle-btn">
+                  <!-- 眼睛打開 -->
+                  <span class="eye-icon-open hidden"
+                    ><i class="fa-regular fa-eye"></i
+                  ></span>
+                  <!-- 眼睛關閉 -->
+                  <span class="eye-icon-close"
+                    ><i class="fa-regular fa-eye-slash"></i
+                  ></span>
+                </button>
+              </div>
+              <button type="submit" class="btn-submit">登入</button>
+            </form>
 
-						<div class="login-footer-links">
-							<a href="register.html">註冊</a>
-							<a href="#">忘記密碼</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
+            <div class="login-footer-links">
+              <a href="register.html">註冊</a>
+              <a href="#">忘記密碼</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-		<script src="js/login.js"></script>
-	</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+  </body>
 </html>
